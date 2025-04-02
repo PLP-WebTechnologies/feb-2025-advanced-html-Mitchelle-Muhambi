@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Features Demonstration</h1>
+    </header>
+
+    <section>
+        <h2>Programming Languages (Ordered List)</h2>
+        <ol type="I">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Ruby</li>
+            <li>C++</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Sample Image from Pexels</h2>
+        <img src="https://images.pexels.com/photos/3730761/pexels-photo-3730761.jpeg" alt="Beautiful Nature" width="600">
+    </section>
+
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St, Cityville</td>
+                    <td>(555) 123-4567</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St, Townville</td>
+                    <td>(555) 234-5678</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>789 Pine St, Villagetown</td>
+                    <td>(555) 345-6789</td>
+                    <td>michaelb@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily White</td>
+                    <td>101 Maple St, Suburbia</td>
+                    <td>(555) 456-7890</td>
+                    <td>emilyw@example.com</td>
+                </tr>
+                <tr>
+                    <td>Daniel Green</td>
+                    <td>202 Birch St, Uptown</td>
+                    <td>(555) 567-8901</td>
+                    <td>danielg@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label>Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Yes
+            <br><br>
+
+            <label>Agree to Terms:</label>
+            <input type="radio" id="agree" name="agreement" value="yes" required> I Agree
+            <input type="radio" id="disagree" name="agreement" value="no" required> I Disagree
+            <br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Multimedia: Audio & Video</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <br><br>
+
+        <video width="600" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+</body>
+</html>
